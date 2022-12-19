@@ -1,5 +1,5 @@
 export interface StatusSource {
-  id: string;
-  text: string;
-  spoilerText: string;
+	id: string;
+	text: string;
+	spoilerText: string;
 }

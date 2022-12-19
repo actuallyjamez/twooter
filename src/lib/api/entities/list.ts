@@ -3,8 +3,8 @@
  * @see https://docs.joinmastodon.org/entities/list/
  */
 export interface List {
-  /** The internal database ID of the list. */
-  id: string;
-  /** The user-defined title of the list. */
-  title: string;
+	/** The internal database ID of the list. */
+	id: string;
+	/** The user-defined title of the list. */
+	title: string;
 }
