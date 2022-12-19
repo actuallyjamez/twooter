@@ -24,7 +24,7 @@
     >
       <i class="mb-0 self-center lg:mb-10 lg:self-auto">
         <TwitterIcon
-          class="-mt-4 h-6 w-6 text-accent-blue lg:h-12 lg:w-12 dark:lg:text-twitter-icon"
+          class="-mt-4 h-6 w-6 text-accent-blue lg:h-12 lg:w-12"
         />
       </i>
       <div class="flex max-w-xs flex-col gap-4 font-twitter-chirp-extended lg:max-w-none lg:gap-16">
@@ -44,7 +44,7 @@
           </Button>
           <p
             class="inner:custom-underline inner:custom-underline text-center text-xs
-                       text-light-secondary inner:text-accent-blue dark:text-dark-secondary"
+                       text-light-secondary inner:text-accent-blue"
           >
             By signing up, you agree to the{" "}
             <a href="https://twitter.com/tos" target="_blank" rel="noreferrer">
@@ -68,9 +68,7 @@
         <div class="flex flex-col gap-3">
           <p class="font-bold">Already have an account?</p>
           <Button
-            class="border border-light-line-reply font-bold text-accent-blue hover:bg-accent-blue/10
-                       focus-visible:bg-accent-blue/10 focus-visible:!ring-accent-blue/80 active:bg-accent-blue/20
-                       dark:border-light-secondary"
+            class="border border-light-line-reply font-bold text-accent-blue hover:bg-accent-blue/10 focus-visible:bg-accent-blue/10 focus-visible:!ring-accent-blue/80 active:bg-accent-blue/20"
           >
             Sign in
           </Button>

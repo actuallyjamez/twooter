@@ -19,7 +19,7 @@
     </div>
 
     <input
-      class="peer flex-1 bg-transparent outline-none placeholder:text-light-secondary dark:placeholder:text-dark-secondary text-sm"
+      class="peer flex-1 bg-transparent outline-none placeholder:text-light-secondary text-sm"
       type="text"
       placeholder="Search Twitter"
     />

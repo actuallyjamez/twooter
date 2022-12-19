@@ -37,7 +37,7 @@
   }
 
   body {
-    @apply hover-animation bg-main-background font-twitter-chirp text-light-primary dark:text-dark-primary;
+    @apply hover-animation bg-main-background font-twitter-chirp text-light-primary;
   }
 }
 
@@ -47,8 +47,7 @@
   }
 
   .hover-card {
-    @apply hover:bg-black/[0.03] focus-visible:bg-black/[0.03] dark:hover:bg-white/[0.03]
-           dark:focus-visible:bg-white/[0.03];
+    @apply hover:bg-black/[0.03] focus-visible:bg-black/[0.03]
   }
 
   .blur-picture {
@@ -66,7 +65,7 @@
 
   .main-tab {
     @apply outline-none focus-visible:ring-2 focus-visible:ring-[#878a8c] focus-visible:transition-shadow 
-           focus-visible:duration-200 dark:focus-visible:ring-white;
+           focus-visible:duration-200;
   }
 
   .accent-tab {
@@ -81,10 +80,6 @@
     @apply focus-visible:bg-main-accent/10;
   }
 
-  .dark-bg-tab {
-    @apply focus-visible:bg-light-primary/10 dark:focus-visible:bg-dark-primary/10;
-  }
-
   .blur-picture {
     @apply hover-animation accent-tab rounded-full transition hover:brightness-75 active:brightness-100;
   }
@@ -97,14 +92,9 @@
 
 /* 
 
-
-
-
-
   .menu-container {
     @apply z-10 rounded-md bg-main-background outline-none 
            [box-shadow:#65778633_0px_0px_15px,_#65778626_0px_0px_3px_1px] 
-           dark:[box-shadow:#ffffff33_0px_0px_15px,_#ffffff26_0px_0px_3px_1px];
   }
 }
 
@@ -114,4 +104,13 @@ html {
 
 .bg-blur {
   background-color: rgba(255, 255, 255, 0.85);
+}
+
+.content a {
+    color: #1da1f2;
+}
+
+.content a:hover {
+    color: #1da1f2;
+    text-decoration: underline;
 }

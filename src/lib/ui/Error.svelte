@@ -4,7 +4,7 @@
 
 <div
   class="flex flex-col items-center justify-center 
-           gap-2 py-5 px-3 text-light-secondary dark:text-dark-secondary"
+           gap-2 py-5 px-3 text-light-secondary"
 >
   <i>
     <svg
