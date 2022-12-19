@@ -32,6 +32,7 @@
 							class="text-light-primary"
 						/>
 						<TweetUserName username={status.account.username} />
+						<i>·</i>
 						<TweetDate tweetLink={"#"} createdAt={status.created_at} />
 					</div>
 				</div>

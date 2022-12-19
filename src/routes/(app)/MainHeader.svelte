@@ -1,7 +1,6 @@
 <script lang="ts">
 	import clsx from "clsx";
 
-	let className = "";
 	export let title: string | undefined;
 	export let disableSticky = false;
 </script>
