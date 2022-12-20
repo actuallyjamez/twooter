@@ -32,7 +32,7 @@
 							class="text-light-primary"
 						/>
 						<TweetUserName username={status.account.username} />
-						<i>·</i>
+						<span>·</span>
 						<TweetDate tweetLink={"#"} createdAt={status.created_at} />
 					</div>
 				</div>
@@ -40,7 +40,7 @@
 					{@html status.content}
 				</div>
 				<div class="max-w-[425px] mt-[11px] flex flex-row justify-between">
-					<div class="text-[#536471]">
+					<div class="text-[#536471] flex flex-row hover:text-[#1D9BF0]">
 						<svg viewBox="0 0 24 24" aria-hidden="true" class="w-[17.5px] h-[17.5px] fill-current">
 							<g>
 								<path
@@ -48,8 +48,11 @@
 								/>
 							</g>
 						</svg>
+						<div class="pl-3 text-[13px]">
+							{status.replies_count != 0 ? status.replies_count : ""}
+						</div>
 					</div>
-					<div class="text-[#536471]">
+					<div class="text-[#536471] flex flex-row ">
 						<svg viewBox="0 0 24 24" aria-hidden="true" class="w-[17.5px] h-[17.5px] fill-current">
 							<g>
 								<path
@@ -57,8 +60,11 @@
 								/>
 							</g>
 						</svg>
+						<div class="pl-3 text-[13px]">
+							{status.reblogs_count != 0 ? status.reblogs_count : ""}
+						</div>
 					</div>
-					<div class="text-[#536471]">
+					<div class="text-[#536471] flex flex-row">
 						<svg viewBox="0 0 24 24" aria-hidden="true" class="w-[17.5px] h-[17.5px] fill-current">
 							<g>
 								<path
@@ -66,6 +72,9 @@
 								/>
 							</g>
 						</svg>
+						<div class="pl-3 text-[13px]">
+							{status.favourites_count != 0 ? status.favourites_count : ""}
+						</div>
 					</div>
 					<div class="text-[#536471]">
 						<svg viewBox="0 0 24 24" aria-hidden="true" class="w-[17.5px] h-[17.5px] fill-current">

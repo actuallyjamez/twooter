@@ -46,13 +46,13 @@ export interface Status {
 	emojis: Emoji[];
 
 	/** How many boosts this status has received. */
-	reblogsCount: number;
+	reblogs_count: number;
 	/** How many favourites this status has received. */
-	favouritesCount: number;
+	favourites_count: number;
 	/** If the current token has an authorized user: The filter and keywords that matched this status. */
 	filtered?: FilterResult[];
 	/** How many replies this status has received. */
-	repliesCount: number;
+	replies_count: number;
 
 	/** A link to the status's HTML representation. */
 	url?: string | null;
