@@ -1,11 +1,14 @@
 <script lang="ts">
+	import type { Status } from "$lib/api/entities";
 	import { fetchPublicFeed } from "$lib/api/feed";
 	import Error from "$lib/ui/Error.svelte";
 	import Loading from "$lib/ui/loading.svelte";
 	import Tweet from "$lib/ui/Tweet.svelte";
 	import { useQuery } from "@sveltestack/svelte-query";
 
-	const feed = useQuery("test", fetchPublicFeed, { refetchOnWindowFocus: false });
+	export let initialData: Status[] | undefined = undefined;
+
+	const feed = useQuery("test", fetchPublicFeed, { refetchOnWindowFocus: false, initialData });
 </script>
 
 {#if $feed.status === "success"}

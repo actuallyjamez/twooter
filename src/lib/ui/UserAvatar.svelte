@@ -11,7 +11,7 @@
 
 <a
 	{href}
-	class={clsx("blur-picture flex self-start", !username && "pointer-events-none", className)}
+	class={clsx("blur-picture flex self-start w-[43px] h-[43px]", className)}
 	tabIndex={username ? 0 : -1}
 >
 	<img class="rounded-full" width={43} height={43} {src} {alt} />

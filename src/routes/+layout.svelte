@@ -1,6 +1,10 @@
 <script lang="ts">
-	import "../fonts/fonts.css";
+	import { QueryClient, QueryClientProvider } from "@sveltestack/svelte-query";
 	import "../app.css";
+	import "../fonts/fonts.css";
+	const queryClient = new QueryClient();
 </script>
 
-<slot />
+<QueryClientProvider client={queryClient}>
+	<slot />
+</QueryClientProvider>

@@ -37,7 +37,7 @@
 			<div class="flex max-w-xs flex-col gap-6 [&_button]:py-2">
 				<div class="grid gap-3 font-bold">
 					<Button
-						class="cursor-not-allowed bg-accent-blue text-white transition hover:brightness-90
+						class="cursor-not-allowed bg-accent text-white transition hover:brightness-90
                        focus-visible:!ring-accent-blue/80 focus-visible:brightness-90 active:brightness-75"
 					>
 						Sign up with phone or email

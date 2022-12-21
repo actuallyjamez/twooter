@@ -3,32 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-	:root {
-		--main-background: var(--light-background);
-		--main-search-background: var(--light-search-background);
-		--main-sidebar-background: var(--light-sidebar-background);
-		--main-accent: var(--accent-blue);
-
-		--dark-background: 0 0 0;
-		--dim-background: 22 33 44;
-		--light-background: 255 255 255;
-
-		--dark-search-background: 32 35 39;
-		--dim-search-background: 39 51 64;
-		--light-search-background: 239 243 244;
-
-		--dark-sidebar-background: 22 24 28;
-		--dim-sidebar-background: 30 39 50;
-		--light-sidebar-background: 247 249 249;
-
-		--accent-yellow: 255 213 0;
-		--accent-blue: 29 155 240;
-		--accent-pink: 249 26 130;
-		--accent-purple: 120 87 255;
-		--accent-orange: 255 122 0;
-		--accent-green: 0 184 122;
-	}
-
 	a,
 	input,
 	button,
@@ -37,7 +11,7 @@
 	}
 
 	body {
-		@apply hover-animation bg-main-background font-twitter-chirp text-light-primary leading-[18px];
+		@apply hover-animation bg-white font-twitter-chirp text-light-primary leading-[18px];
 	}
 }
 
@@ -51,15 +25,15 @@
 	}
 
 	.blur-picture {
-		@apply hover-animation accent-tab rounded-full transition hover:brightness-75 active:brightness-100;
+		@apply transition-colors duration-200 accent-tab rounded-full hover:brightness-75 active:brightness-100;
 	}
 
 	.custom-button {
-		@apply hover-animation rounded-full p-3 disabled:cursor-not-allowed disabled:opacity-50;
+		@apply transition-colors duration-200 rounded-full p-3 disabled:cursor-not-allowed disabled:opacity-50;
 	}
 
 	.custom-underline {
-		@apply hover-animation underline decoration-transparent outline-none transition [text-decoration-thickness:1px] 
+		@apply transition-colors duration-200 underline decoration-transparent outline-none [text-decoration-thickness:1px] 
            hover:decoration-inherit focus-visible:decoration-inherit;
 	}
 
@@ -73,7 +47,7 @@
 	}
 
 	.accent-tab:focus-visible {
-		@apply ring-main-accent/80;
+		@apply ring-accent/80;
 	}
 
 	.accent-bg-tab {
@@ -101,10 +75,6 @@ html {
   overflow-y: scroll;
 } */
 
-.bg-blur {
-	background-color: rgba(255, 255, 255, 0.85);
-}
-
 .content a {
 	color: #1da1f2;
 }
@@ -112,4 +82,12 @@ html {
 .content a:hover {
 	color: #1da1f2;
 	text-decoration: underline;
+}
+
+.invisible {
+	display: none;
+}
+
+.ellipsis:after {
+	content: "...";
 }

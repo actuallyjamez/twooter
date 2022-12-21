@@ -12,7 +12,7 @@
 	type="button"
 	disabled={isDisabled}
 	class={clsx(
-		"custom-button main-tab",
+		"main-tab transition-colors duration-200 rounded-full p-3 disabled:cursor-not-allowed disabled:opacity-50",
 		loading && "relative !text-transparent disabled:cursor-wait",
 		className
 	)}
