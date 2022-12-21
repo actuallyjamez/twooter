@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { Status } from "$lib/api/entities";
+	import IconButton from "./IconButton.svelte";
 	import TweetDate from "./tweet/TweetDate.svelte";
 	import TweetUserName from "./tweet/TweetUserName.svelte";
 	import UserAvatar from "./UserAvatar.svelte";
 	import UserName from "./UserName.svelte";
-	import IconButton from "./IconButton.svelte";
 	export let status: Status;
 </script>
 
@@ -43,10 +43,7 @@
 					<div
 						class="text-[#536471] flex flex-row hover:text-[rgb(29,155,240)] group transition-colors select-none cursor-pointer"
 					>
-						<div class="inline-flex relative w-[17.5px] h-[17.5px] ">
-							<div
-								class="absolute m-[-8px] inset-0 group-hover:bg-[rgba(29,155,240,0.1)] rounded-full transition-colors"
-							/>
+						<IconButton>
 							<svg viewBox="0 0 24 24" aria-hidden="true" class="fill-current">
 								<g>
 									<path
@@ -54,7 +51,7 @@
 									/>
 								</g>
 							</svg>
-						</div>
+						</IconButton>
 						<div class="pl-3 text-[13px] text-inherit">
 							{status.replies_count != 0 ? status.replies_count : ""}
 						</div>
@@ -62,22 +59,15 @@
 					<div
 						class="text-[#536471] flex flex-row hover:text-[rgb(0,186,124)] group transition-colors select-none cursor-pointer"
 					>
-						<div class="inline-flex relative w-[17.5px] h-[17.5px] ">
-							<div
-								class="absolute m-[-8px] inset-0 group-hover:bg-[rgba(0,186,124,0.1)] rounded-full transition-colors"
-							/>
-							<svg
-								viewBox="0 0 24 24"
-								aria-hidden="true"
-								class="w-[17.5px] h-[17.5px] fill-current"
-							>
+						<IconButton>
+							<svg viewBox="0 0 24 24" aria-hidden="true" class="fill-current">
 								<g>
 									<path
 										d="M4.5 3.88l4.432 4.14-1.364 1.46L5.5 7.55V16c0 1.1.896 2 2 2H13v2H7.5c-2.209 0-4-1.79-4-4V7.55L1.432 9.48.068 8.02 4.5 3.88zM16.5 6H11V4h5.5c2.209 0 4 1.79 4 4v8.45l2.068-1.93 1.364 1.46-4.432 4.14-4.432-4.14 1.364-1.46 2.068 1.93V8c0-1.1-.896-2-2-2z"
 									/>
 								</g>
 							</svg>
-						</div>
+						</IconButton>
 						<div class="pl-3 text-[13px]">
 							{status.reblogs_count != 0 ? status.reblogs_count : ""}
 						</div>
@@ -85,10 +75,7 @@
 					<div
 						class="text-[#536471] flex flex-row hover:text-[rgb(249,24,128)] group transition-colors select-none cursor-pointer"
 					>
-						<div class="inline-flex relative w-[17.5px] h-[17.5px] ">
-							<div
-								class="absolute m-[-8px] inset-0 group-hover:bg-[rgba(249,24,128,0.1)] rounded-full transition-colors"
-							/>
+						<IconButton>
 							<svg
 								viewBox="0 0 24 24"
 								aria-hidden="true"
@@ -100,7 +87,7 @@
 									/>
 								</g>
 							</svg>
-						</div>
+						</IconButton>
 						<div class="pl-3 text-[13px]">
 							{status.favourites_count != 0 ? status.favourites_count : ""}
 						</div>
@@ -108,10 +95,7 @@
 					<div
 						class="text-[#536471] flex flex-row hover:text-[rgb(29,155,240)] group transition-colors select-none cursor-pointer"
 					>
-						<div class="inline-flex relative w-[17.5px] h-[17.5px] ">
-							<div
-								class="absolute m-[-8px] inset-0 group-hover:bg-[rgba(29,155,240,0.1)] rounded-full transition-colors"
-							/>
+						<IconButton>
 							<svg
 								viewBox="0 0 24 24"
 								aria-hidden="true"
@@ -123,7 +107,7 @@
 									/>
 								</g>
 							</svg>
-						</div>
+						</IconButton>
 					</div>
 				</div>
 			</div>
