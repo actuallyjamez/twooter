@@ -42,6 +42,9 @@
 					username={status.account.username}
 					href={status.account.username}
 				/>
+				<div
+					class="text-[#536471] flex flex-row hover:text-[rgb(29,155,240)] group transition-colors select-none cursor-pointer"
+				/>
 			</div>
 			<div class="flex min-w-0 flex-col">
 				<div class="flex justify-between gap-2 text-light-secondary">
@@ -56,6 +59,17 @@
 						<TweetUserName username={status.account.username} />
 						<span>·</span>
 						<TweetDate tweetLink={"#"} createdAt={status.created_at} />
+					</div>
+					<div class="hover:text-[rgb(29,155,240)] group">
+						<IconButton>
+							<svg viewBox="0 0 24 24" aria-hidden="true" class="fill-current">
+								<g>
+									<path
+									d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+									/>
+								</g>
+							</svg>
+						</IconButton>
 					</div>
 				</div>
 				<div class="whitespace-pre-line break-words text-sm content">
