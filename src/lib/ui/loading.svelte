@@ -8,5 +8,5 @@
 </script>
 
 <i class={clsx("flex justify-center", className ?? "p-4")}>
-	<SpinnerIcon class={clsx("text-main-accent", iconClass ?? "h-7 w-7")} />
+	<SpinnerIcon class={clsx("text-accent", iconClass ?? "h-7 w-7")} />
 </i>

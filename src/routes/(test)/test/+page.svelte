@@ -12,7 +12,7 @@
 <div class="w-[990px] flex justify-between">
 	<div class="w-[600px] border-r border-[#eff3f4] min-h-screen">
 		<MainHeader title="Latest Tweets" />
-		<Timeline initialData={data.feed} />
+		<Timeline />
 	</div>
 	<div class="w-[350px] mr-[10px]">
 		<div class="top-0 sticky">

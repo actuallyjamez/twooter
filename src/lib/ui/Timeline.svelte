@@ -8,7 +8,7 @@
 
 	export let initialData: Status[] | undefined = undefined;
 
-	const feed = useQuery("test", fetchPublicFeed, { refetchOnWindowFocus: false, initialData });
+	const feed = useQuery("test", fetchPublicFeed, {  initialData });
 </script>
 
 {#if $feed.status === "success"}
