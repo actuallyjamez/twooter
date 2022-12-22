@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { Tag } from "masto";
-	import IconButton from "../IconButton.svelte";
+	import IconButton from "../tweet/IconButton.svelte";
 
 	export let trend: Tag;
 </script>
@@ -13,7 +13,7 @@
 		</div>
 		<div class="font-thin text-[13px] text-light-secondary">21.4K Tweets</div>
 	</div>
-	<div class="text-light-secondary hover:text-[rgb(29,155,240)] group">
+	<div class="text-light-secondary hover:text-primay group">
 		<IconButton>
 			<svg viewBox="0 0 24 24" aria-hidden="true" class="fill-current">
 				<g>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import IconButton from "./IconButton.svelte";
+	import IconButton from "./tweet/IconButton.svelte";
 	import TweetDate from "./tweet/TweetDate.svelte";
 	import TweetUserName from "./tweet/TweetUserName.svelte";
 	import UserAvatar from "./UserAvatar.svelte";
@@ -77,9 +77,9 @@
 				</div>
 				<div class="max-w-[425px] mt-[11px] flex flex-row justify-between">
 					<div
-						class="text-[#536471] flex flex-row hover:text-[rgb(29,155,240)] group transition-colors select-none cursor-pointer"
+						class="text-[#536471] flex flex-row hover:text-primay group transition-colors select-none cursor-pointer"
 					>
-						<IconButton background='bg-[rgb(29,155,240)]'>
+						<IconButton class="group-hover:bg-primay">
 							<svg viewBox="0 0 24 24" aria-hidden="true" class="fill-current">
 								<g>
 									<path
@@ -93,9 +93,9 @@
 						</div>
 					</div>
 					<div
-						class="text-[#536471] flex flex-row hover:text-[rgb(0,186,124)] group transition-colors select-none cursor-pointer"
+						class="text-[#536471] flex flex-row hover:text-accent-green group transition-colors select-none cursor-pointer"
 					>
-						<IconButton background='bg-[rgb(0,186,124)]'>
+						<IconButton class="group-hover:bg-accent-green">
 							<svg viewBox="0 0 24 24" aria-hidden="true" class="fill-current">
 								<g>
 									<path
@@ -109,9 +109,9 @@
 						</div>
 					</div>
 					<div
-						class="text-[#536471] flex flex-row hover:text-[rgb(249,24,128)] group transition-colors select-none cursor-pointer"
+						class="text-[#536471] flex flex-row hover:text-accent-red group transition-colors select-none cursor-pointer"
 					>
-						<IconButton background='bg-[rgb(249,24,128)]'>
+						<IconButton class="group-hover:bg-accent-red">
 							<svg
 								viewBox="0 0 24 24"
 								aria-hidden="true"
@@ -131,7 +131,7 @@
 					<div
 						class="text-[#536471] flex flex-row hover:text-[rgb(29,155,240)] group transition-colors select-none cursor-pointer"
 					>
-						<IconButton background='bg-[rgb(29,155,240)]'>
+						<IconButton class="group-hover:bg-primay">
 							<svg
 								viewBox="0 0 24 24"
 								aria-hidden="true"

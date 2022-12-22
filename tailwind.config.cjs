@@ -15,9 +15,10 @@ module.exports = {
 				"twitter-chirp-extended": ["TwitterChirpExtendedHeavy", "sans-serif"],
 			},
 			colors: {
-				'background': 'rgb(var(--main-background) / <alpha-value>)',
-				"accent": "#1d9bf0",
-				"accent-red": "#F4212E",
+				primay: "#1d9bf0",
+				"accent-green": "#00ba7c",
+				"accent-red": "#f91880",
+				'accent': "#1d9bf0",
 				"light-primary": "#0F1419",
 				"light-secondary": "#536471",
 				"light-border": "#EFF3F4",
