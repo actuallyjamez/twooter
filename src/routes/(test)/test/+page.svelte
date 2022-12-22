@@ -16,9 +16,7 @@
 			<div class="pb-[11px]">
 				<SearchBar />
 			</div>
-			<TrendCard>
-				<TrendCardTitle title="What's happening" />
-			</TrendCard>
+			<TrendCard />
 		</div>
 	</div>
 </div>
