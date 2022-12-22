@@ -4,9 +4,6 @@
 	import SearchBar from "$lib/ui/SearchBar.svelte";
 	import TrendCard from "$lib/ui/TrendCard/TrendCard.svelte";
 	import TrendCardTitle from "$lib/ui/TrendCard/TrendCardTitle.svelte";
-	import type { PageServerData } from "./$types";
-
-	export let data: PageServerData;
 </script>
 
 <div class="w-[990px] flex justify-between">
