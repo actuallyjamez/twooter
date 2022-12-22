@@ -13,11 +13,7 @@
 		"timeline:public",
 		({ pageParam }) => fetchPublicFeed(pageParam),
 		{
-			refetchOnWindowFocus: true,
-			getNextPageParam: (lastPage, allPages) => ({
-				before: lastPage.first,
-				since: allPages.at(0)?.last,
-			}),
+			getNextPageParam: (lastPage) => lastPage.last,
 			staleTime: Infinity,
 		}
 	);
