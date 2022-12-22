@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { Status } from "$lib/api/entities";
 	import IconButton from "./IconButton.svelte";
 	import TweetDate from "./tweet/TweetDate.svelte";
 	import TweetUserName from "./tweet/TweetUserName.svelte";
 	import UserAvatar from "./UserAvatar.svelte";
 	import UserName from "./UserName.svelte";
 	import { goto } from "$app/navigation";
+	import type { Status } from "masto";
 
 	const isTextSelected = () => {
 		const selection = window.getSelection();
@@ -52,20 +52,20 @@
 						class="flex gap-1 truncate xs:overflow-visible xs:whitespace-normal items-center"
 					>
 						<UserName
-							name={status.account.display_name}
+							name={status.account.displayName}
 							username={status.account.username}
 							class="text-light-primary"
 						/>
 						<TweetUserName username={status.account.username} />
 						<span>·</span>
-						<TweetDate tweetLink={"#"} createdAt={status.created_at} />
+						<TweetDate tweetLink={"#"} createdAt={status.createdAt} />
 					</div>
 					<div class="hover:text-[rgb(29,155,240)] group">
 						<IconButton>
 							<svg viewBox="0 0 24 24" aria-hidden="true" class="fill-current">
 								<g>
 									<path
-									d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
+										d="M3 12c0-1.1.9-2 2-2s2 .9 2 2-.9 2-2 2-2-.9-2-2zm9 2c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm7 0c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2z"
 									/>
 								</g>
 							</svg>
@@ -89,7 +89,7 @@
 							</svg>
 						</IconButton>
 						<div class="pl-3 text-[13px] text-inherit">
-							{status.replies_count != 0 ? status.replies_count : ""}
+							{status.repliesCount != 0 ? status.repliesCount : ""}
 						</div>
 					</div>
 					<div
@@ -105,7 +105,7 @@
 							</svg>
 						</IconButton>
 						<div class="pl-3 text-[13px]">
-							{status.reblogs_count != 0 ? status.reblogs_count : ""}
+							{status.reblogsCount != 0 ? status.reblogsCount : ""}
 						</div>
 					</div>
 					<div
@@ -125,7 +125,7 @@
 							</svg>
 						</IconButton>
 						<div class="pl-3 text-[13px]">
-							{status.favourites_count != 0 ? status.favourites_count : ""}
+							{status.favouritesCount != 0 ? status.favouritesCount : ""}
 						</div>
 					</div>
 					<div
