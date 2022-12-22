@@ -9,6 +9,7 @@
 
 <a
 	{href}
+	{disabled}
 	class={clsx(
 		"group py-1 outline-none",
 		canBeHidden ? "hidden xs:flex" : "flex",
@@ -16,11 +17,7 @@
 	)}
 >
 	<div
-		class={clsx(
-			`custom-button flex items-center justify-center gap-4 self-start p-2 text-xl transition 
-             duration-200 group-hover:bg-light-primary/10 group-focus-visible:ring-2 
-             group-focus-visible:ring-[#878a8c] xs:p-3 xl:pr-5`
-		)}
+		class="custom-button flex items-center justify-center gap-4 self-start p-2 text-xl transition duration-200 group-hover:bg-light-primary/10 group-focus-visible:ring-2 group-focus-visible:ring-[#878a8c] xs:p-3 xl:pr-5"
 	>
 		<p class="hidden xl:block">{linkName}</p>
 	</div>
