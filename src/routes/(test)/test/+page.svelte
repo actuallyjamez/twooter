@@ -3,7 +3,6 @@
 	import MainHeader from "../../(app)/MainHeader.svelte";
 	import SearchBar from "$lib/ui/SearchBar.svelte";
 	import TrendCard from "$lib/ui/TrendCard/TrendCard.svelte";
-	import TrendCardTitle from "$lib/ui/TrendCard/TrendCardTitle.svelte";
 </script>
 
 <div class="w-[990px] flex justify-between">
