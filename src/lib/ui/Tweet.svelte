@@ -79,7 +79,7 @@
 					<div
 						class="text-[#536471] flex flex-row hover:text-[rgb(29,155,240)] group transition-colors select-none cursor-pointer"
 					>
-						<IconButton>
+						<IconButton background='bg-[rgb(29,155,240)]'>
 							<svg viewBox="0 0 24 24" aria-hidden="true" class="fill-current">
 								<g>
 									<path
@@ -95,7 +95,7 @@
 					<div
 						class="text-[#536471] flex flex-row hover:text-[rgb(0,186,124)] group transition-colors select-none cursor-pointer"
 					>
-						<IconButton>
+						<IconButton background='bg-[rgb(0,186,124)]'>
 							<svg viewBox="0 0 24 24" aria-hidden="true" class="fill-current">
 								<g>
 									<path
@@ -111,7 +111,7 @@
 					<div
 						class="text-[#536471] flex flex-row hover:text-[rgb(249,24,128)] group transition-colors select-none cursor-pointer"
 					>
-						<IconButton>
+						<IconButton background='bg-[rgb(249,24,128)]'>
 							<svg
 								viewBox="0 0 24 24"
 								aria-hidden="true"
@@ -131,7 +131,7 @@
 					<div
 						class="text-[#536471] flex flex-row hover:text-[rgb(29,155,240)] group transition-colors select-none cursor-pointer"
 					>
-						<IconButton>
+						<IconButton background='bg-[rgb(29,155,240)]'>
 							<svg
 								viewBox="0 0 24 24"
 								aria-hidden="true"
