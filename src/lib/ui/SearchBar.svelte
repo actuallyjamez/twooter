@@ -4,11 +4,11 @@
 	// let inputValue = true;
 </script>
 
-<form class="hover-animation z-10 bg-main-background h-[48px] flex items-center">
+<form class="hover-animation z-10 h-[48px] flex items-center">
 	<label
-		class="group flex w-full items-center justify-between gap-4 rounded-full bg-main-search-background p-[11px] transition focus-within:bg-main-background focus-within:ring-1 focus-within:ring-main-accent"
+		class="group flex w-full items-center justify-between gap-4 rounded-full bg-[#EFF3F4] p-[11px] transition focus-within:bg-white focus-within:ring-1 focus-within:ring-accent"
 	>
-		<div class="peer pl-[9px] text-light-secondary peer-focus:text-main-accent">
+		<div class="peer pl-[9px] text-light-secondary peer-focus:text-accent">
 			<svg class=" w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
 				<g>
 					<path

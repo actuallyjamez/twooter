@@ -3,6 +3,7 @@
 	import { useQuery } from "@sveltestack/svelte-query";
 	import { fetchTrendTags } from "$lib/api/trends";
 	import TrendCardItem from "./TrendCardItem.svelte";
+	import animate from "$lib/animate";
 
 	const trends = useQuery("trends", fetchTrendTags, { initialData: [] });
 </script>
